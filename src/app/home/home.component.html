@@ -1,0 +1,30 @@
+<div id="container">
+  <!--header-->
+  <div class="header">
+    <p class="logo lt">古奥基因</p>
+    <p class="backStage lt">古奥基因官网后台管理系统</p>
+    <div class="currUser rt"><span>当前用户:</span><span>111</span></div>
+  </div>
+  <!--container-->
+
+  <div id="box">
+    <div class="sidebar">
+      <ul>
+        <!--<li>-->
+          <!--<a [routerLink]="['./dynamic']">古奥动态</a>-->
+        <!--</li>-->
+        <li>
+          <a [routerLink]="['./need']">招聘信息</a>
+        </li>
+        <li>
+          <a [routerLink]="['./promotion']">宣传图片</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+<div style="width:800px;margin:0 auto;">
+  <router-outlet></router-outlet>
+</div>

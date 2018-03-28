@@ -1,0 +1,40 @@
+#container .header{
+  height:75px;
+  line-height:75px;
+  background: #22283F;
+  font-size:18px;
+  color:#fff;
+}
+#container{
+  width:1200px;
+  margin:0 auto;
+}
+#container .header .logo{
+  margin-left:50px;
+}
+#container .backStage{
+  margin-left:100px;
+}
+#container .header .currUser{
+  margin-right:75px;
+}
+#box .sidebar ul li{
+  width:160px;
+  height:50px;
+  line-height:50px;
+  font-size:16px;
+  cursor:pointer;
+  text-align: center;
+}
+#box .sidebar ul a{
+  color:#ACABAC;
+}
+#box{
+  width:200px;
+}
+#box .sidebar ul li:hover{
+  background: #598DE1;
+}
+
+
+

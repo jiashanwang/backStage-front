@@ -1,0 +1,42 @@
+
+<div id="loginIndex" [hidden]="loginStatus">
+  <p class="title">
+    古奥基因
+  </p>
+  <div id="loginBox">
+    <form [formGroup]="formModel" (ngSubmit)="onSubmit()">
+      <input type="text" formControlName="username" (blur)="validatorUsername()" placeholder="用户名" class="inputBox"><br>
+      <div [hidden]="formModel.get('username').valid || formModel.get('username').untouched">
+        <div [hidden]="!formModel.hasError('required','username')" class="tipBox">
+          用户名不能为空
+        </div>
+      </div>
+      <div [hidden]="usernameIsExsit" class="IsExsit">
+        用户名不存在
+      </div>
+
+      <input type="password" (blur)="validatorPassword()" formControlName="password" placeholder="密码" class="inputBox"><br>
+      <div [hidden]="formModel.get('password').valid || formModel.get('password').untouched">
+        <div [hidden]="!formModel.hasError('required','password')" class="tipBox">
+          密码不能为空
+        </div>h
+      </div>
+      <div [hidden]="passwordIsExsit" class="IsExsit">
+        密码输入不正确
+      </div>
+
+      <input type="checkbox" class="remember"> 记住用户名 <br>
+      <button type="submit" class="loginBtn">登录</button>
+    </form>
+  </div>
+
+</div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
+
